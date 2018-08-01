@@ -1,0 +1,36 @@
+name: drupal-migration
+recipe: drupal8
+config:
+  webroot: d8_site/web
+proxy:
+  d7site:
+    - d7site.drupal-migration.lndo.site
+  phpmyadmin:
+    - phpmyadmin.drupal-migration.lndo.site
+services:
+  d7site:
+    type: php:5.6
+    via: apache
+    webroot: d7_site
+    composer:
+      drush/drush: "~8"
+    overrides:
+      services:
+        environment:
+          DB_HOST: d7db
+          DB_USER: drupal7
+          DB_PASSWORD: drupal7
+          DB_NAME: drupal7
+          DB_PORT: 3306
+  d7db:
+    type: mysql
+    portforward: true
+    creds:
+      user: drupal7
+      password: drupal7
+      database: drupal7
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+      - d7db
