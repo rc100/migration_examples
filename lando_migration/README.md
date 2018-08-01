@@ -30,6 +30,10 @@ DB_PASSWORD: drupal7
 DB_NAME: drupal7
 ```
 ### Installing Drupal 8
+Before installing the site, you will need to download all the Drupal 8 Composer dependencies:
+1. `cd d8_site`
+1. `lando composer require`
+
 Visit `drupal-migration.lndo.site` and follow the installation instructions. The settings.php already has credentials setup for this site and connecting to the Drupal 7 database.
 
 ```
