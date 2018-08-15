@@ -88,7 +88,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 8,
+        'fid' => 4,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -595,7 +595,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 13,
+        'fid' => 7,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -757,7 +757,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 5,
+        'fid' => 10,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -919,7 +919,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 8,
+        'fid' => 10,
         'title' => NULL,
         'data' => NULL,
       ),
