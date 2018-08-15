@@ -88,7 +88,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 4,
+        'fid' => 8,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -107,6 +107,16 @@ function migration_demo_uuid_features_default_content() {
       0 => array(
         'value' => 'Horns on top of horns.',
         'format' => NULL,
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2015-10-31 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -269,6 +279,16 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2019-05-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -344,7 +364,7 @@ function migration_demo_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>The&nbsp;<strong>Komodo dragon</strong>&nbsp;(<em>Varanus komodoensis</em>), also known as the&nbsp;<strong>Komodo monitor</strong>, is a species of&nbsp;<a href="https://en.wikipedia.org/wiki/Lizard" title="Lizard">lizard</a>&nbsp;found in the&nbsp;<a href="https://en.wikipedia.org/wiki/Indonesia" title="Indonesia">Indonesian</a>&nbsp;islands of&nbsp;<a href="https://en.wikipedia.org/wiki/Komodo_(island)" title="Komodo (island)">Komodo</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Rinca" title="Rinca">Rinca</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Flores" title="Flores">Flores</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Gili_Motang" title="Gili Motang">Gili Motang</a>, and&nbsp;<a href="https://en.wikipedia.org/wiki/Padar_(island)" title="Padar (island)">Padar</a>.<span style="font-size:10.8333px"> </span>A member of the&nbsp;<a href="https://en.wikipedia.org/wiki/Monitor_lizard" title="Monitor lizard">monitor lizard</a>&nbsp;family&nbsp;<a href="https://en.wikipedia.org/wiki/Varanidae" title="Varanidae">Varanidae</a>, it is the largest living species of lizard, growing to a maximum length of 3 metres (10&nbsp;ft) in rare cases and weighing up to approximately 70 kilograms (150&nbsp;lb).</p>
+        'value' => '<p>The&nbsp;<strong>Komodo dragon</strong>&nbsp;(<em>Varanus komodoensis</em>), also known as the&nbsp;<strong>Komodo monitor</strong>, is a species of&nbsp;<a href="https://en.wikipedia.org/wiki/Lizard" title="Lizard">lizard</a>&nbsp;found in the&nbsp;<a href="https://en.wikipedia.org/wiki/Indonesia" title="Indonesia">Indonesian</a>&nbsp;islands of&nbsp;<a href="https://en.wikipedia.org/wiki/Komodo_(island)" title="Komodo (island)">Komodo</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Rinca" title="Rinca">Rinca</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Flores" title="Flores">Flores</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Gili_Motang" title="Gili Motang">Gili Motang</a>, and&nbsp;<a href="https://en.wikipedia.org/wiki/Padar_(island)" title="Padar (island)">Padar</a>. A member of the&nbsp;<a href="https://en.wikipedia.org/wiki/Monitor_lizard" title="Monitor lizard">monitor lizard</a>&nbsp;family&nbsp;<a href="https://en.wikipedia.org/wiki/Varanidae" title="Varanidae">Varanidae</a>, it is the largest living species of lizard, growing to a maximum length of 3 metres (10&nbsp;ft) in rare cases and weighing up to approximately 70 kilograms (150&nbsp;lb).</p>
 ',
         'summary' => '',
         'format' => 'filtered_html',
@@ -425,6 +445,16 @@ function migration_demo_uuid_features_default_content() {
       0 => array(
         'value' => 'Its an actual dragon but looks more like a dinosaur',
         'format' => NULL,
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2017-10-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -565,7 +595,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 7,
+        'fid' => 13,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -580,6 +610,16 @@ function migration_demo_uuid_features_default_content() {
     ),
   ),
   'field_metal' => array(),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2018-09-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -717,7 +757,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 10,
+        'fid' => 5,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -732,6 +772,16 @@ function migration_demo_uuid_features_default_content() {
     ),
   ),
   'field_metal' => array(),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2016-03-12 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -795,7 +845,7 @@ function migration_demo_uuid_features_default_content() {
   'title' => 'Galapagos Marine Iguana',
   'log' => '',
   'status' => 1,
-  'comment' => 0,
+  'comment' => 1,
   'promote' => 1,
   'sticky' => 0,
   'type' => 'lizard',
@@ -869,7 +919,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 10,
+        'fid' => 8,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -884,6 +934,16 @@ function migration_demo_uuid_features_default_content() {
     ),
   ),
   'field_metal' => array(),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2021-01-02 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -1021,7 +1081,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack' => array(
     'und' => array(
       0 => array(
-        'fid' => 7,
+        'fid' => 5,
         'title' => NULL,
         'data' => NULL,
       ),
@@ -1030,7 +1090,7 @@ function migration_demo_uuid_features_default_content() {
   'field_soundtrack_credits' => array(
     'und' => array(
       0 => array(
-        'value' => 'Looperman: POLIMAR, e-scrape',
+        'value' => 'Looperman: Josephfunk metal talk rhythm guitar w/fxs 130',
         'format' => NULL,
       ),
     ),
@@ -1040,6 +1100,16 @@ function migration_demo_uuid_features_default_content() {
       0 => array(
         'value' => 'Also known as the "Spider-man" agama because of its colors',
         'format' => NULL,
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2015-01-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -1199,6 +1269,16 @@ function migration_demo_uuid_features_default_content() {
       0 => array(
         'value' => 'Practically a dragon. Dracarys!',
         'format' => NULL,
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2017-05-31 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),

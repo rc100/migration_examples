@@ -54,6 +54,61 @@ function migration_demo_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-lizard-field_date'.
+  $field_instances['node-lizard-field_date'] = array(
+    'bundle' => 'lizard',
+    'deleted' => 0,
+    'description' => '* Ok - this doesn\'t make a whole lot of sense, and obviously these beasts have been rocking it since the Cretaceous but we needed a date field for migration example, so... ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_date',
+    'label' => 'Metal Since',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_select',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-lizard-field_image'.
   $field_instances['node-lizard-field_image'] = array(
     'bundle' => 'lizard',
@@ -238,7 +293,7 @@ function migration_demo_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -424,10 +479,12 @@ function migration_demo_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('* Ok - this doesn\'t make a whole lot of sense, and obviously these beasts have been rocking it since the Cretaceous but we needed a date field for migration example, so... ');
   t('Address');
   t('Body');
   t('Image');
   t('Image Credits');
+  t('Metal Since');
   t('More Info');
   t('Region');
   t('Soundtrack');

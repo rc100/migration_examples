@@ -27,7 +27,8 @@ function migration_demo_field_group_info() {
       1 => 'field_more_info',
       2 => 'field_region',
       3 => 'field_metal',
-      4 => 'title',
+      4 => 'field_date',
+      5 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
