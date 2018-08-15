@@ -11,7 +11,12 @@ function uuid_file_entity_features_export_options() {
   $options = array();
 
   // Check what content types are enabled for uuid features export.
-  $enabled_types = variable_get('uuid_features_entity_file', FALSE);
+  $file_entity_info = entity_get_info('file');
+  if (!empty($file_entity_info)) {
+    foreach ($file_entity_info['bundles'] as $key => $bundle) {
+      $enabled_types[$key] = variable_get('uuid_features_entity_file_' . $key, FALSE);
+    }
+  }
   if (!empty($enabled_types)) {
     $query = new EntityFieldQuery();
     $query
@@ -126,6 +131,13 @@ function uuid_file_entity_features_export_render($module, $data) {
     );
 
     $code[] = '  $files[] = ' . features_var_export($export, '  ') . ';';
+
+    // Add packaged file, if any.
+    if (isset($export->uuid_features_packaged_file_path)) {
+      $return[$export->uuid_features_packaged_file_path] = array(
+        'file_path' => $export->uri,
+      );
+    }
   }
 
   if (!empty($translatables)) {
@@ -133,7 +145,10 @@ function uuid_file_entity_features_export_render($module, $data) {
   }
   $code[] = '  return $files;';
   $code = implode("\n", $code);
-  return array('uuid_features_default_file_entities' => $code);
+
+  $return['uuid_features_default_file_entities'] = $code;
+
+  return $return;
 }
 
 /**
