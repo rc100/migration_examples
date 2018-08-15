@@ -13,33 +13,34 @@ function migration_demo_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_basics|node|lizard|form';
-  $field_group->group_name = 'group_basics';
+  $field_group->identifier = 'group_info|node|lizard|form';
+  $field_group->group_name = 'group_info';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'lizard';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Basics',
+    'label' => 'Info',
     'weight' => '0',
     'children' => array(
       0 => 'body',
-      1 => 'field_region',
-      2 => 'field_more_info',
-      3 => 'title',
+      1 => 'field_more_info',
+      2 => 'field_region',
+      3 => 'field_metal',
+      4 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'description' => '',
-        'classes' => 'group-basics field-group-fieldset',
+        'classes' => 'group-info field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
       ),
     ),
   );
-  $field_groups['group_basics|node|lizard|form'] = $field_group;
+  $field_groups['group_info|node|lizard|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -101,7 +102,7 @@ function migration_demo_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Basics');
+  t('Info');
   t('Photo');
   t('Soundtrack');
 

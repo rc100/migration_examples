@@ -65,7 +65,7 @@ function migration_demo_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'large',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -100,7 +100,7 @@ function migration_demo_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -128,6 +128,46 @@ function migration_demo_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_image_caption',
     'label' => 'Image Credits',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-lizard-field_metal'.
+  $field_instances['node-lizard-field_metal'] = array(
+    'bundle' => 'lizard',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_metal',
+    'label' => 'Why its METAL',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -198,7 +238,7 @@ function migration_demo_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -392,6 +432,7 @@ function migration_demo_field_default_field_instances() {
   t('Region');
   t('Soundtrack');
   t('Soundtrack Credits');
+  t('Why its METAL');
 
   return $field_instances;
 }

@@ -93,6 +93,28 @@ function migration_demo_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_metal'.
+  $field_bases['field_metal'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_metal',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_more_info'.
   $field_bases['field_more_info'] = array(
     'active' => 1,
