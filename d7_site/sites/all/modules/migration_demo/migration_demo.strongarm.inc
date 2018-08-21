@@ -37,6 +37,9 @@ function migration_demo_strongarm() {
         'title' => array(
           'weight' => '1',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
