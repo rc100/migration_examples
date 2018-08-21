@@ -53,3 +53,21 @@ DB_NAME: drupal7
 Currently to use Composer to add modules or libraries to the Drupal 8 site, you will need to be in the `d8_site` folder before running `lando composer require`.
 
 The Drupal 7 is not setup with Drush or any other tools right now. It's just there to test content migrations to Drupal 8.
+
+## Setting up the Drupal 7 site
+
+On the Drupal 7 site after installation, you will want to enable the "migration_demo" feature. This will enable a dozen other modules needed to build out the site as well as creating the content types.
+
+After installing, go to
+
+  /admin/structure/features/migration_demo
+
+and then select 'file entity' and 'content' in the list and then 'revert components' at the bottom of the page.
+
+This will load all of the example data (lizards) into the site and you can view it on a grid here:
+
+  /lizards-are-metal
+
+or as a table format:
+
+  /d7.lndo.site/lizards
