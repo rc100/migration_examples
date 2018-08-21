@@ -34,7 +34,7 @@ Before installing the site, you will need to download all the Drupal 8 Composer 
 1. `cd d8_site`
 1. `lando composer install`
 
-Visit `drupal-migration.lndo.site` and follow the installation instructions. The settings.php already has credentials setup for this site and connecting to the Drupal 7 database.
+Visit `drupalmigration.lndo.site` and follow the installation instructions. The settings.php already has credentials setup for this site and connecting to the Drupal 7 database.
 
 ```
 [default][default]
