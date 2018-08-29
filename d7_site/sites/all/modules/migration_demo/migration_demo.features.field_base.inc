@@ -123,6 +123,91 @@ function migration_demo_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_location'.
+  $field_bases['field_location'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_location',
+    'indexes' => array(
+      'lid' => array(
+        0 => 'lid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'location_cck',
+    'settings' => array(
+      'gmap_macro' => '[gmap ]',
+      'gmap_marker' => 'drupal',
+      'location_settings' => array(
+        'display' => array(
+          'hide' => array(
+            'additional' => 'additional',
+            'city' => 'city',
+            'coords' => 0,
+            'country' => 'country',
+            'country_name' => 0,
+            'locpick' => 0,
+            'map_link' => 0,
+            'name' => 0,
+            'postal_code' => 'postal_code',
+            'province' => 'province',
+            'province_name' => 0,
+            'street' => 'street',
+          ),
+        ),
+        'form' => array(
+          'fields' => array(
+            'additional' => array(
+              'collect' => 1,
+              'default' => '',
+              'weight' => 6,
+            ),
+            'city' => array(
+              'collect' => 1,
+              'default' => '',
+              'weight' => 8,
+            ),
+            'country' => array(
+              'collect' => 1,
+              'default' => 'us',
+              'weight' => 14,
+            ),
+            'locpick' => array(
+              'collect' => 0,
+              'weight' => 20,
+            ),
+            'name' => array(
+              'collect' => 0,
+              'default' => '',
+              'weight' => 2,
+            ),
+            'postal_code' => array(
+              'collect' => 1,
+              'default' => '',
+              'weight' => 12,
+            ),
+            'province' => array(
+              'collect' => 1,
+              'default' => '',
+              'weight' => 10,
+              'widget' => 'autocomplete',
+            ),
+            'street' => array(
+              'collect' => 1,
+              'default' => '',
+              'weight' => 4,
+            ),
+          ),
+        ),
+      ),
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'location',
+  );
+
   // Exported field_base: 'field_metal'.
   $field_bases['field_metal'] = array(
     'active' => 1,
