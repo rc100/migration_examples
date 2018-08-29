@@ -31,11 +31,17 @@ function migration_demo_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '1',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),

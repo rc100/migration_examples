@@ -21,7 +21,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'rdf_mapping' => array(),
     'metadata' => array(),
     'uuid_features_packaged_file_path' => 'assets/looperman-l-2432827-0125468-polimar-e-scrape.wav',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'galapagos-land-iguana.jpg',
@@ -41,7 +41,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 1956,
     'width' => 2708,
     'uuid_features_packaged_file_path' => 'assets/galapagos-land-iguana.jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => '16003176782_f0020dff2c_z.jpg',
@@ -61,7 +61,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 419,
     'width' => 640,
     'uuid_features_packaged_file_path' => 'assets/16003176782_f0020dff2c_z.jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'looperman-l-0676809-0118951-vwdubber-mtpowerdrum-doomblackmetal.wav',
@@ -74,7 +74,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'rdf_mapping' => array(),
     'metadata' => array(),
     'uuid_features_packaged_file_path' => 'assets/looperman-l-0676809-0118951-vwdubber-mtpowerdrum-doomblackmetal.wav',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'rock-agama.jpg',
@@ -94,7 +94,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 1500,
     'width' => 2000,
     'uuid_features_packaged_file_path' => 'assets/rock-agama.jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'Thorny_devil_pale.jpg',
@@ -114,7 +114,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 1447,
     'width' => 1920,
     'uuid_features_packaged_file_path' => 'assets/Thorny_devil_pale.jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'looperman-l-0671112-0093021-danke-corroded-guitars-2.wav',
@@ -127,7 +127,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'rdf_mapping' => array(),
     'metadata' => array(),
     'uuid_features_packaged_file_path' => 'assets/looperman-l-0671112-0093021-danke-corroded-guitars-2.wav',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'Cordylus_giganteus.jpg',
@@ -147,7 +147,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 593,
     'width' => 790,
     'uuid_features_packaged_file_path' => 'assets/Cordylus_giganteus.jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'looperman-l-2615019-0129831-bass-bug.wav',
@@ -160,7 +160,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'rdf_mapping' => array(),
     'metadata' => array(),
     'uuid_features_packaged_file_path' => 'assets/looperman-l-2615019-0129831-bass-bug.wav',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'looperman-l-0630386-0100089-josephfunk-metal-talk-rhythm-guitar-w-fxs-130 (1).wav',
@@ -173,7 +173,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'rdf_mapping' => array(),
     'metadata' => array(),
     'uuid_features_packaged_file_path' => 'assets/looperman-l-0630386-0100089-josephfunk-metal-talk-rhythm-guitar-w-fxs-130 (1).wav',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'looperman-l-1414881-0081908-epicrecord-heavy-electric-1.wav',
@@ -186,7 +186,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'rdf_mapping' => array(),
     'metadata' => array(),
     'uuid_features_packaged_file_path' => 'assets/looperman-l-1414881-0081908-epicrecord-heavy-electric-1.wav',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => '1280px-Marineiguanas.JPG',
@@ -206,7 +206,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 853,
     'width' => 1280,
     'uuid_features_packaged_file_path' => 'assets/1280px-Marineiguanas.JPG',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => 'Frill-necked_Lizard_(Chlamydosaurus_kingii)_(8692622586).jpg',
@@ -226,7 +226,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 853,
     'width' => 1280,
     'uuid_features_packaged_file_path' => 'assets/Frill-necked_Lizard_(Chlamydosaurus_kingii)_(8692622586).jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   $files[] = array(
     'filename' => '30217984_Unknown.jpg',
@@ -246,7 +246,7 @@ function migration_demo_uuid_features_default_file_entities() {
     'height' => 1536,
     'width' => 2048,
     'uuid_features_packaged_file_path' => 'assets/30217984_Unknown.jpg',
-    'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+    'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
   );
   return $files;
 }

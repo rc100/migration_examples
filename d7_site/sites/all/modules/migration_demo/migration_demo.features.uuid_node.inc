@@ -34,6 +34,16 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2015-10-31 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
   'field_image' => array(
     'und' => array(
       0 => array(
@@ -64,6 +74,14 @@ function migration_demo_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'value' => 'Credit: KeresH, Wikimedia Foundation',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_metal' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Horns on top of horns.',
         'format' => NULL,
       ),
     ),
@@ -102,21 +120,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => 'Horns on top of horns.',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2015-10-31 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 8,
+        'name' => '',
+        'street' => '1 Sheikh Mohammed bin Rashid Blvd',
+        'additional' => 'c/o Lizard Caretaker - Dubai',
+        'city' => 'Dubai',
+        'province' => '',
+        'postal_code' => 123456,
+        'country' => 'ae',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'United Arab Emirates',
       ),
     ),
   ),
@@ -177,7 +197,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-06 13:46:20 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Giant Girdled Lizard',
@@ -200,6 +220,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2019-05-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -233,6 +263,14 @@ function migration_demo_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'value' => 'Credit: Wikimedia Foundation',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_metal' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Its scientific name is "Smaug giganteus" after the dragon in Tolkien\'s Hobbit',
         'format' => NULL,
       ),
     ),
@@ -271,21 +309,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => 'Its scientific name is "Smaug giganteus" after the dragon in Tolkien\'s Hobbit',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2019-05-13 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 7,
+        'name' => '',
+        'street' => 'Neuschwansteinstraße 20',
+        'additional' => 'c/o Lizard Caretaker - Schwangau',
+        'city' => 'Schwangau',
+        'province' => '',
+        'postal_code' => '87645 ',
+        'country' => 'de',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'Germany',
       ),
     ),
   ),
@@ -346,7 +386,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 14:09:13 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Komodo Dragon',
@@ -369,6 +409,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2017-10-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -402,6 +452,14 @@ function migration_demo_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'value' => 'Flickr: Schnippy',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_metal' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Its an actual dragon but looks more like a dinosaur',
         'format' => NULL,
       ),
     ),
@@ -440,21 +498,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => 'Its an actual dragon but looks more like a dinosaur',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2017-10-13 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 6,
+        'name' => '',
+        'street' => '15 Dionysiou Areopagitou Street',
+        'additional' => 'c/o Lizard Caretaker - Athens',
+        'city' => 'Athens',
+        'province' => '',
+        'postal_code' => 11742,
+        'country' => 'gr',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'Greece',
       ),
     ),
   ),
@@ -515,7 +575,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:58:51 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Frill-necked Lizard ',
@@ -538,6 +598,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2018-09-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -575,6 +645,7 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_metal' => array(),
   'field_more_info' => array(
     'und' => array(
       0 => array(
@@ -609,14 +680,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(),
-  'field_date' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => '2018-09-13 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 5,
+        'name' => '',
+        'street' => '4 Jingshan Front St',
+        'additional' => 'Dongcheng Qu',
+        'city' => 'Beijing Shi',
+        'province' => '',
+        'postal_code' => 100006,
+        'country' => 'cn',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'China',
       ),
     ),
   ),
@@ -677,7 +757,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-06 13:52:34 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Galapagos Land Iguana',
@@ -700,6 +780,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2016-03-12 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -737,6 +827,7 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_metal' => array(),
   'field_more_info' => array(
     'und' => array(
       0 => array(
@@ -771,14 +862,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(),
-  'field_date' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => '2016-03-12 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 4,
+        'name' => '',
+        'street' => 'Champ de Mars',
+        'additional' => '5 Avenue Anatole France',
+        'city' => 'Paris',
+        'province' => '',
+        'postal_code' => 75007,
+        'country' => 'fr',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'France',
       ),
     ),
   ),
@@ -839,7 +939,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:23:54 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Galapagos Marine Iguana',
@@ -862,6 +962,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2021-01-02 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -899,6 +1009,7 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_metal' => array(),
   'field_more_info' => array(
     'und' => array(
       0 => array(
@@ -933,14 +1044,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(),
-  'field_date' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => '2021-01-02 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 3,
+        'name' => '',
+        'street' => 'Elizabeth Tower',
+        'additional' => 'Houses of Parliament',
+        'city' => 'Westminster',
+        'province' => 'LND',
+        'postal_code' => 'SW1A 0AA',
+        'country' => 'gb',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => 'London',
+        'country_name' => 'United Kingdom',
       ),
     ),
   ),
@@ -1001,7 +1121,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-06 15:03:44 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Mwanza flat-headed rock agama',
@@ -1024,6 +1144,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2015-01-13 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -1057,6 +1187,14 @@ function migration_demo_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'value' => 'Credit: Wikimedia Foundation',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_metal' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Also known as the "Spider-man" agama because of its colors',
         'format' => NULL,
       ),
     ),
@@ -1095,21 +1233,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => 'Also known as the "Spider-man" agama because of its colors',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2015-01-13 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 2,
+        'name' => '',
+        'street' => '350 5th Ave',
+        'additional' => '102nd Floor',
+        'city' => 'New York',
+        'province' => 'NY',
+        'postal_code' => 10118,
+        'country' => 'us',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => 'New York',
+        'country_name' => 'United States',
       ),
     ),
   ),
@@ -1170,7 +1310,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:27:17 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Philippine Sailfin Lizard',
@@ -1193,6 +1333,16 @@ function migration_demo_uuid_features_default_content() {
         'summary' => '',
         'format' => 'filtered_html',
         'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2017-05-31 00:00:00',
+        'timezone' => 'America/New_York',
+        'timezone_db' => 'America/New_York',
+        'date_type' => 'datetime',
       ),
     ),
   ),
@@ -1226,6 +1376,14 @@ function migration_demo_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'value' => 'Flickr: Gautsch',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_metal' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Practically a dragon. Dracarys!',
         'format' => NULL,
       ),
     ),
@@ -1264,21 +1422,23 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_metal' => array(
+  'field_location' => array(
     'und' => array(
       0 => array(
-        'value' => 'Practically a dragon. Dracarys!',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2017-05-31 00:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'America/New_York',
-        'date_type' => 'datetime',
+        'lid' => 1,
+        'name' => '',
+        'street' => '1800 Massachusetts Ave',
+        'additional' => '2nd Floor',
+        'city' => 'Washington',
+        'province' => 'DC',
+        'postal_code' => 20036,
+        'country' => 'us',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => 'District Of Columbia',
+        'country_name' => 'United States',
       ),
     ),
   ),
@@ -1339,7 +1499,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:38:22 -0400',
-  'user_uuid' => '9a1e1fa2-7f67-4b7e-be13-7506812ce50f',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   return $nodes;
 }
