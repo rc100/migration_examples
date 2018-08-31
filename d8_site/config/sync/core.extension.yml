@@ -1,4 +1,5 @@
 module:
+  address: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -15,7 +16,6 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
-  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -23,7 +23,7 @@ module:
   history: 0
   image: 0
   link: 0
-  media: 0
+  menu_ui: 0
   node: 0
   options: 0
   page_cache: 0
@@ -40,8 +40,8 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  menu_link_content: 1
   views: 10
-  admin_menu: 100
   standard: 1000
 theme:
   stable: 0

@@ -1,10 +1,17 @@
-uuid: 1d8a0e1e-97d8-49e2-936c-64ace235074b
+uuid: ffa21727-61af-44ef-80da-de5f0a624d6a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 name: Lizard
 type: lizard
-description: 'For only the most ''Metal'' of Lizards... '
+description: 'Migration Example destination content type for all your lizard data needs. '
 help: ''
 new_revision: true
 preview_mode: 1
