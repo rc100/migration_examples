@@ -83,7 +83,6 @@ There are two main ways to interact with the migration examples in this project:
 
 
 Enable and Run the Taxonomy Migration Examples
-----------------------------------------------
 
 1. Backup your d8_site database so you can easily reset your migration environment:
   `cd web`
