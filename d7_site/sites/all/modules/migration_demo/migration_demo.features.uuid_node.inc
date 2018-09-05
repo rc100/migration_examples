@@ -197,6 +197,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-06 13:46:20 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Giant Girdled Lizard',
@@ -385,6 +386,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 14:09:13 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Komodo Dragon',
@@ -573,6 +575,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:58:51 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Frill-necked Lizard ',
@@ -754,6 +757,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-06 13:52:34 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Galapagos Land Iguana',
@@ -935,6 +939,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:23:54 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Galapagos Marine Iguana',
@@ -1116,6 +1121,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-06 15:03:44 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Mwanza flat-headed rock agama',
@@ -1304,6 +1310,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:27:17 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   $nodes[] = array(
   'title' => 'Philippine Sailfin Lizard',
@@ -1492,6 +1499,7 @@ function migration_demo_uuid_features_default_content() {
   ),
   'comment_count' => 0,
   'date' => '2018-08-15 13:38:22 -0400',
+  'user_uuid' => '3429d4fb-31a5-4b11-a731-5ef0c21e2de4',
 );
   return $nodes;
 }
