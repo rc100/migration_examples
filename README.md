@@ -55,8 +55,10 @@ DB_NAME: drupal7
 On the Drupal 7 site, after installation,
 * enable the Features module at admin/modules
 * enable the "migration_demo" feature at admin/structure/features
+* clear all caches
 * revert the migration_demo feature at admin/structure/features/migration_demo
-** select 'file entity' and 'content' in the list and then 'revert components' at the bottom of the page.
+** select all the overridden items in the list and then 'revert components' at the bottom of the page.
+* After reverting, 'file entity' and 'content' may continue to indicate that they are overridden. Ignore this as it is only related to the UUID of these items.
 
 This will enable a dozen other modules needed to build out the site as well as creating the content types. This will also load all of the example data (lizards) into the site and you can view it on a grid here:
 
@@ -83,6 +85,7 @@ There are two main ways to interact with the migration examples in this project:
 
 
 Enable and Run the Taxonomy Migration Examples
+----------------------------------------------
 
 1. Backup your d8_site database so you can easily reset your migration environment:
   `cd web`
