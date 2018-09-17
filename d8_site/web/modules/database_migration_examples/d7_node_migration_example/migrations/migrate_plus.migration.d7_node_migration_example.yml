@@ -7,7 +7,7 @@ dependencies:
 # Machine name of the migration.
 id: d7_node_migration_example
 # Use the default plugin class.
-class: {  }
+class: Drupal\migrate\Plugin\Migration
 # Use the default field plugin method.
 field_plugin_method: {  }
 # Use the default cck plugin method.
