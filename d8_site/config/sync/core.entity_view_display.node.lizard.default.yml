@@ -1,21 +1,13 @@
-uuid: e33e276b-013a-4fa9-aee8-e35be984535d
+uuid: afeb7f21-f052-422e-910e-199b2dbd11c4
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.lizard.body
-    - field.field.node.lizard.field_date
-    - field.field.node.lizard.field_image_credits
-    - field.field.node.lizard.field_lizard_image
-    - field.field.node.lizard.field_more_info
-    - field.field.node.lizard.field_region
-    - field.field.node.lizard.field_soundtrack
-    - field.field.node.lizard.field_soundtrack_credits
+    - field.field.node.lizard.field_address
     - node.type.lizard
   module:
-    - datetime
-    - image
-    - link
+    - address
     - text
     - user
 id: node.lizard.default
@@ -26,76 +18,18 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_date:
-    weight: 2
+  field_address:
+    weight: 102
     label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
+    settings: {  }
     third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_image_credits:
-    weight: 4
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_lizard_image:
-    weight: 3
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_more_info:
-    weight: 5
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_region:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_soundtrack:
-    type: entity_reference_entity_view
-    weight: 6
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_soundtrack_credits:
-    weight: 7
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+    type: address_default
     region: content
   links:
-    weight: 8
+    weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden: {  }

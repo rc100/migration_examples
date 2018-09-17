@@ -58,6 +58,7 @@ On the Drupal 7 site, after installation,
 * clear all caches
 * revert the migration_demo feature at admin/structure/features/migration_demo
 ** select all the overridden items in the list and then 'revert components' at the bottom of the page.
+* After reverting, 'file entity' and 'content' may continue to indicate that they are overridden. Ignore this as it is only related to the UUID of these items.
 
 This will enable a dozen other modules needed to build out the site as well as creating the content types. This will also load all of the example data (lizards) into the site and you can view it on a grid here:
 
@@ -84,24 +85,29 @@ There are two main ways to interact with the migration examples in this project:
 
 
 Enable and Run the Taxonomy Migration Examples
--------------------------------------
+----------------------------------------------
 
 1. Backup your d8_site database so you can easily reset your migration environment:
   `cd web`
   `lando drush sql-dump --result-file=../drupal8.sql`
 
-2. Enable the migrate modules:
+2. Import the Lizard content type configurations:
+   `lando drush -y cim`
+
+3. Enable the migrate modules:
   `lando drush -y en migrate migrate_plus migrate_tools migrate_drupal migrate_drupal_ui;`
 
-3. Enable the migration example modules:
-  `lando drush -y en d7_migration_group_example d7_taxonomy_vocabulary_migration_example d7_taxonomy_term_migration_example;lando drush cr;`
+4. Enable the migration example modules:
+  `lando drush -y en d7_migration_group_example d7_taxonomy_vocabulary_migration_example d7_taxonomy_term_migration_example;lando drush -y en d7_node_migration_example;lando drush cr;`
 
-4. Import the migration example configurations:
-  `lando drush -y config-import --partial --source="modules/d7_migration_group_example/migrations/";lando drush -y config-import --partial --source="modules/database_migration_examples/d7_taxonomy_vocabulary_migration_example/migrations/";lando drush -y config-import --partial --source="modules/database_migration_examples/d7_taxonomy_term_migration_example/migrations/";lando drush cr;lando drush ms;`
+5. Import the migration example configurations:
+  `lando drush -y config-import --partial --source="modules/d7_migration_group_example/migrations/";lando drush -y config-import --partial --source="modules/database_migration_examples/d7_taxonomy_vocabulary_migration_example/migrations/";lando drush -y config-import --partial --source="modules/database_migration_examples/d7_taxonomy_term_migration_example/migrations/";lando drush -y config-import --partial --source="modules/database_migration_examples/d7_node_migration_example/migrations/";lando drush cr;lando drush ms;`
 
-5. Run the migrations:
-  `lando drush mim d7_taxonomy_vocabulary_migration_example;lando drush mim d7_taxonomy_term_migration_example`
+6. Run the migrations:
+  `lando drush mim d7_taxonomy_vocabulary_migration_example;lando drush mim d7_taxonomy_term_migration_example;lando drush ms;lando drush mim d7_node_migration_example;`
 
-6. Browse the d8_site to verify the migrations were successful:
-  Taxonomy Vocabulary and Terms:
-  http://drupalmigration.lndo.site/admin/structure/taxonomy/manage/region/overview
+7. Browse the d8_site to verify the migrations were successful:
+    Taxonomy Vocabulary and Terms:
+      http://drupalmigration.lndo.site/admin/structure/taxonomy/manage/region/overview
+    Lizard nodes
+      http://drupalmigration.lndo.site/admin/content

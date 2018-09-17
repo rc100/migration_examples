@@ -120,7 +120,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 8,
+        'name' => '',
+        'street' => '1 Sheikh Mohammed bin Rashid Blvd',
+        'additional' => 'c/o Lizard Caretaker - Dubai',
+        'city' => 'Dubai',
+        'province' => '',
+        'postal_code' => 123456,
+        'country' => 'ae',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'United Arab Emirates',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -290,7 +309,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 7,
+        'name' => '',
+        'street' => 'Neuschwansteinstraße 20',
+        'additional' => 'c/o Lizard Caretaker - Schwangau',
+        'city' => 'Schwangau',
+        'province' => '',
+        'postal_code' => '87645 ',
+        'country' => 'de',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'Germany',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -460,7 +498,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 6,
+        'name' => '',
+        'street' => '15 Dionysiou Areopagitou Street',
+        'additional' => 'c/o Lizard Caretaker - Athens',
+        'city' => 'Athens',
+        'province' => '',
+        'postal_code' => 11742,
+        'country' => 'gr',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'Greece',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -623,7 +680,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 5,
+        'name' => '',
+        'street' => '4 Jingshan Front St',
+        'additional' => 'Dongcheng Qu',
+        'city' => 'Beijing Shi',
+        'province' => '',
+        'postal_code' => 100006,
+        'country' => 'cn',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'China',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -786,7 +862,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 4,
+        'name' => '',
+        'street' => 'Champ de Mars',
+        'additional' => '5 Avenue Anatole France',
+        'city' => 'Paris',
+        'province' => '',
+        'postal_code' => 75007,
+        'country' => 'fr',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => '',
+        'country_name' => 'France',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -949,7 +1044,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 3,
+        'name' => '',
+        'street' => 'Elizabeth Tower',
+        'additional' => 'Houses of Parliament',
+        'city' => 'Westminster',
+        'province' => 'LND',
+        'postal_code' => 'SW1A 0AA',
+        'country' => 'gb',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => 'London',
+        'country_name' => 'United Kingdom',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -1119,7 +1233,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 2,
+        'name' => '',
+        'street' => '350 5th Ave',
+        'additional' => '102nd Floor',
+        'city' => 'New York',
+        'province' => 'NY',
+        'postal_code' => 10118,
+        'country' => 'us',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => 'New York',
+        'country_name' => 'United States',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -1289,7 +1422,26 @@ function migration_demo_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_location' => array(),
+  'field_location' => array(
+    'und' => array(
+      0 => array(
+        'lid' => 1,
+        'name' => '',
+        'street' => '1800 Massachusetts Ave',
+        'additional' => '2nd Floor',
+        'city' => 'Washington',
+        'province' => 'DC',
+        'postal_code' => 20036,
+        'country' => 'us',
+        'latitude' => '0.000000',
+        'longitude' => '0.000000',
+        'source' => 0,
+        'is_primary' => 0,
+        'province_name' => 'District Of Columbia',
+        'country_name' => 'United States',
+      ),
+    ),
+  ),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
