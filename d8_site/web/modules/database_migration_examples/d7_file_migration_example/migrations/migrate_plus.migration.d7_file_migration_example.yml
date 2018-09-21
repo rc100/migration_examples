@@ -1,0 +1,50 @@
+langcode: en
+status: true
+# This migration is not dependent on other modules.
+dependencies: {  }
+# Machine name of the migration.
+id: d7_file_migration_example
+# Use the default plugin class.
+class: Drupal\migrate\Plugin\Migration
+# Use the default field plugin method.
+field_plugin_method: {  }
+# Use the default cck plugin method.
+cck_plugin_method: {  }
+# Migration tags to which this migration belongs.
+migration_tags:
+  - 'Drupal 7'
+# Migration group to which this migration belongs.
+migration_group: d7_migration_group_example
+# Human friendly name of the migration for various UI and CLI tools.
+label: 'Example Files Migration'
+source:
+  # Drupal's core taxonomy term plugin.
+  plugin: d7_file
+  constants:
+    file_origin: 'http://d7site.drupal-migration.lndo.site/sites/default/files/'
+process:
+  d7_path:
+    plugin: concat
+    source:
+      - constants/file_origin
+      - filename
+  filename: filename
+  uri: uri
+  filemime: filemime
+  filesize: filesize
+  status: status
+  type: type
+  uid: uid
+  # Since we have separate file systems, this downloads the file using the constant above.
+  download_file:
+    plugin: download
+    source:
+      - '@d7_path'
+      - uri
+    file_exists: rename
+destination:
+  plugin: 'entity:file'
+# This migration dependent on the another migration.
+migration_dependencies:
+  required: {}
+  optional: {}
