@@ -1,0 +1,10 @@
+name: D7 User Migration Example
+type: module
+description: Demonstrates how users can be migrated.
+core: 8.x
+package: Migration Example modules
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools
+  - d7_migration_group_example

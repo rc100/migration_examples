@@ -1,0 +1,99 @@
+# This script is based on the 'd7_user.yml' migration template
+# (in core/modules/user/migrations).
+
+# Machine name of the migration.
+id: d7_user_migration_example
+# Human friendly name of the migration for various UI and CLI tools.
+label: user accounts for d7 example site.
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - d7_migration_group_example
+# Use the default plugin class.
+class: Drupal\migrate\Plugin\Migration
+# Use the default field plugin method.
+field_plugin_method: {  }
+# Use the default cck plugin method.
+cck_plugin_method: {  }
+# Migration tags to which this migration belongs.
+migration_tags:
+  - 'Drupal 7'
+# Migration group to which this migration belongs.
+migration_group: d7_migration_group_example
+source:
+  # Drupal's core taxonomy term migration plugin.
+  plugin: d7_user
+process:
+  # Increment user ids instead of assigning them directly.
+  uid: {  }
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  timezone: timezone
+  init: init
+
+  # Do not migrate user if they're blocked (status = 0).
+  status:
+    plugin: skip_on_empty
+    method: row
+    source: status
+
+  # Map legacy user role(s) to d8 user role(s), for each role this user has.
+  roles:
+    plugin: static_map
+    bypass: true
+    source: roles
+    map:
+      # Map legacy role rid 2 (authenticated user) to d8 'authenticated' role.
+      2: authenticated
+      # Map legacy role rid 3 (administrator') to d8 'administrator' role.
+      3: administrator
+    # Map all other legacy user roles to d8 'authenticated' user role.
+    default_value: authenticated
+    # Alternatively, we could migrate user roles (first) in a separate migration
+    # script (instead of using the static_map above), then assign these migrated
+    # roles to users here.
+    #plugin: migration_lookup
+    #migration: d7_user_role
+    #source: roles
+
+  # Migrate user's language config.
+  langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: false
+  preferred_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  preferred_admin_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+
+  # The site we're migration from doesn't have user pictures, so disabling this.
+  #user_picture:
+  #  -
+  #    plugin: default_value
+  #    source: picture
+  #    default_value: null
+  #  -
+  #    plugin: migration_lookup
+  #    migration: d7_file
+destination:
+  # Migrate into d8 user entities.
+  plugin: entity:user
+# This migration is not dependent on other migrations.
+migration_dependencies:
+  # If we were also migrating user roles (instead of mapping them), we'd list
+  # that migration script here as a required migration dependency (so that roles
+  # will always get migrated before users).
+  #required:
+  #  - d7_user_role
+  required: {}
+  optional: {}
