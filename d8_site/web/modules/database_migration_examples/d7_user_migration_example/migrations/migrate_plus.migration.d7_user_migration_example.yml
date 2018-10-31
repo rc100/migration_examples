@@ -28,7 +28,17 @@ source:
 process:
   # Increment user ids instead of assigning them directly.
   uid: {  }
-  name: name
+  name:
+  # If username for the migrated user already exists in the d8 site, dedupe by
+  # adding "_1" to the end of its username.
+  -
+    plugin: get
+    source: name
+  -
+    plugin: make_unique_entity_field
+    entity_type: user
+    field: name
+    postfix: _
   pass: pass
   mail: mail
   created: created
@@ -46,7 +56,6 @@ process:
   # Map legacy user role(s) to d8 user role(s), for each role this user has.
   roles:
     plugin: static_map
-    bypass: true
     source: roles
     map:
       # Map legacy role rid 2 (authenticated user) to d8 'authenticated' role.
